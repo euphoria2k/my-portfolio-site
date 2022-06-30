@@ -1,12 +1,5 @@
 import "./projects.scss";
-import {
-  CodeRounded,
-  BugReportRounded,
-  ArticleRounded,
-  GroupsRounded,
-  ArrowForwardRounded,
-  ArrowBackRounded,
-} from "@mui/icons-material";
+import { ArrowForwardRounded, ArrowBackRounded } from "@mui/icons-material";
 import { useState } from "react";
 
 export default function Projects() {

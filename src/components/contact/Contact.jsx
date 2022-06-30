@@ -1,6 +1,4 @@
 import "./contact.scss";
-import { useState } from "react";
-import { spacing } from "@mui/system";
 
 export default function Contact() {
   return (
