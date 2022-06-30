@@ -1,0 +1,177 @@
+@import "../../global.scss";
+
+.projects {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    font-size: 48px;
+    top: 52px;
+
+    @include mobile {
+      font-size: 28px;
+      top: 64px;
+    }
+  }
+
+  .arrow {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+
+    @include mobile {
+      font-size: 18px;
+    }
+
+    &.left {
+      left: 100px;
+
+      @include mobile {
+        left: 10px;
+      }
+    }
+
+    &.right {
+      right: 100px;
+
+      @include mobile {
+        right: 10px;
+      }
+    }
+  }
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-in-out;
+
+    @include mobile {
+      justify-content: center;
+    }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .items {
+        width: 800px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          width: 80%;
+          height: 256px;
+          margin: 5px 0;
+        }
+
+        .leftSide {
+          flex: 4;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include mobile {
+            flex: 12;
+          }
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imgContainer {
+              position: absolute;
+              top: 10px;
+              width: 84px;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+
+              @include mobile {
+                top: 64px;
+              }
+
+              .slider-icon {
+                width: 25px;
+              }
+            }
+
+            h2 {
+              font-size: 24px;
+              @include mobile {
+                font-size: 18px;
+                margin-top: 48px;
+              }
+            }
+            p {
+              font-size: 16px;
+              padding-bottom: 2;
+              @include mobile {
+                font-size: 14px;
+              }
+            }
+
+            span {
+              font-size: 12px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+
+              @include mobile {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+
+        .rightSide {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          @include mobile {
+            display: none;
+            flex: 0;
+          }
+
+          img {
+            width: 100%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
