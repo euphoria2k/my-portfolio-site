@@ -23,6 +23,10 @@
       height: 100%;
       transition: all 1s ease;
 
+      @include mobile {
+        height: 92%;
+      }
+
       &:hover {
         transform: scale(0.8);
       }
