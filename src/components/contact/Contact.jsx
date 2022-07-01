@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="rightSide">
         <h2>What are you waiting for? Contact me now or read more about me!</h2>
         <form>
-          <a href="https://www.linkedin.com/in/carmen-nera/overlay/1635495463869/single-media-viewer/?type=DOCUMENT&profileId=ACoAADOXVHcBROS2ZuwSVfayKNmP-s8qxXD1CU8">
+          <a href="https://1drv.ms/b/s!ApJHUIMPb6iQkWnAt0f4Iux3TjO8?e=XV5w7x">
             <button className="resume" type="button">
               View Resume
             </button>
